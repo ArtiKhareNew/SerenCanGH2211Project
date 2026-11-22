@@ -18,6 +18,11 @@ packages:
   gitUrl: https://bitbucket.org/testartiibm
   gitUsername: artikhare
   gitBranch: master
+- name: AddPublicService
+  gitServerName: srcCtrl_gitlab_shared_Arti
+  gitUrl: https://gitlab.com/ArtiKhareGitlab
+  gitUsername: ArtiKhareGitlab
+  gitBranch: master
 services:
 - serviceName: project.serencangh2211.streaming.connections:EmbeddedMessaging
   packages:
