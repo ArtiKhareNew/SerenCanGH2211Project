@@ -14,24 +14,53 @@ packages:
   gitUsername: ArtiKhare
   gitBranch: main
 - name: AddPublicService
+  version: "6.0"
   gitServerName: srcCtrl_gitlab_shared_Arti
   gitUrl: https://gitlab.com/ArtiKhareGitlab
   gitUsername: ArtiKhareGitlab
   gitBranch: master
 - name: DivisionPackage
+  version: "5.0"
   gitServerName: src_shared_GithubCtrl_Arti
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: MultiplyPublicService
+  version: "6.0"
   gitServerName: srcCtrl_shared_bitbucket_Arti
   gitUrl: https://bitbucket.org/testartiibm
   gitUsername: artikhare
   gitBranch: master
 services:
+- serviceName: project.serencangh2211.integrations:githubfs
+  packages:
+  - name: SerenCanGH2211Project
+    version: "1.0"
+  - name: DivisionPackage
+    version: "5.0"
+  - name: AddPublicService
+    version: "6.0"
+  - name: SubstractPublicSvcPackage
+    version: "3.0"
+  - name: MultiplyPublicService
+    version: "6.0"
+- serviceName: DivisionPackage:division_service
+  packages:
+  - name: DivisionPackage
+    version: "5.0"
+- serviceName: pub.math:divideInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1070
 - serviceName: project.serencangh2211.streaming.connections:EmbeddedMessaging
   packages:
   - name: SerenCanGH2211Project
     version: "1.0"
+  - name: DivisionPackage
+    version: "5.0"
+  - name: AddPublicService
+    version: "6.0"
   - name: SubstractPublicSvcPackage
     version: "3.0"
+  - name: MultiplyPublicService
+    version: "6.0"
