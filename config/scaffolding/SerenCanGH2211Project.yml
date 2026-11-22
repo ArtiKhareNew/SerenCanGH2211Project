@@ -23,6 +23,11 @@ packages:
   gitUrl: https://gitlab.com/ArtiKhareGitlab
   gitUsername: ArtiKhareGitlab
   gitBranch: master
+- name: DivisionPackage
+  gitServerName: src_shared_GithubCtrl_Arti
+  gitUrl: https://github.com/ArtiKhareNew
+  gitUsername: ArtiKhareNew
+  gitBranch: main
 services:
 - serviceName: project.serencangh2211.streaming.connections:EmbeddedMessaging
   packages:
